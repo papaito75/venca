@@ -37,8 +37,8 @@
         
         <form action="/Products/Index/?=sectionCode&=groupCode&=eventCode&searched" id="searcher" method="get" name="buscar">
             <fieldset>
-                <div id="borderSearcher">
-                    <input id="fieldsearcher" name="searchedText" type="text" value="" placeholder="BUSCAR"/>
+                <div class="borderField">
+                    <input class="fieldForm" name="searchedText" type="text" value="" placeholder="BUSCAR"/>
                     <input id="finder" name="submit" type="submit" value="" />
                 </div>
             </fieldset>
@@ -90,8 +90,15 @@
         	<div id="tel">
         		<a href="tel:807-00-11-00">Llámanos: 807 00 11 00*</a>
             </div>
-            <a href="/StaticPages/SaleGeneralConditions">Condiciones de venta</a> | <a href="/StaticPages/LegalAdvice">Aviso legal</a> | <a href="/StaticPages/LegalAdvice#proteccion">Protección de datos</a><br/><br/>
-            <a href="/StaticPages/CookiesPolicy">Política de cookies</a> | <a href="/StaticPages/GoToClassicWeb">Ver web clásica</a>
+            <ul id="info">
+                <li class="itemInfo"><a href="/StaticPages/SaleGeneralConditions">Condiciones de venta</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice">Aviso legal</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice#proteccion">Protección de datos</a></li>
+                <div style="clear:both"></div>
+                <br/>
+                <li class="itemInfo"><a href="/StaticPages/CookiesPolicy">Política de cookies</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/GoToClassicWeb">Ver web clásica</a></li>
+            </ul>
             <p class="small_print">(&#42;) 807 00 11 00: Precio máximo 0,42 €/min. desde red fija y 0,79 €/min. desde red móvil. IVA incluido. Las 24 horas del día, 7 días a la semana. + de 18 años. Servicio ofrecido por CIFDSA (VENCA) con CIF nº A-58028655 y domicilio en Camí de les Oliveres nº 1, Vilanova i la Geltrú (Barcelona)</p>
 			<p class="small_print">&#169; Copyright 2015 Venca</p>
         </div>

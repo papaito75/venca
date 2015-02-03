@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+<title>Venca</title>
+</head>
+
+<body>
+    <a name="inicio"></a> 
+    <div id="page">
+    
+        <div id="header">
+            <div id="menuTop">
+                <!--<div id="botonMenu"></div>-->
+                
+                <div id="logo">
+                	<h1>
+                		<a title="VENCA" href="/Navigation">Venca Mobile</a>
+                	</h1>
+                </div>
+                
+                <div id="cart">
+                	<a href="/Cart/Index" id="cart_details" class="fullSize"></a>
+                </div>
+                
+                <div id="miCuenta"><a id="botonMiCuentaRosa" class="botonMiCuenta" href="/Users/Login">Mi cuenta</a></div>
+                
+            </div>
+        </div>
+        
+        <form class="login" action ="/Users/Identify" method ="post" onsubmit="return validarCamposRequeridosLogin(this)">
+        	<h2 class="tituloRosa"><font class="textRosa">YA SOY CLIENTE</font> DE VENCA.ES</h2>
+        	<input id="havepassword" name="havepassword" type="hidden" value="true" />
+            <fieldset>
+                <div class="borderField">
+                    <input class="fieldForm" id="Email" maxlength="50" name="Email" type="email" value="" placeholder="E-mail"/>
+                </div>
+                <p id="EmailError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <div id="password" class="borderField">
+                    <input class="fieldForm" id="password" name="password" type="password" value="" placeholder="Contraseña"/>
+                </div>
+                <p id="PasswordError" class="red"></p>
+            	<br/>
+        		<a id="forgottenPass" href="/Users/ForgotPassword?class=link%20block">¿Has olvidado tu contraseña?</a>
+            </fieldset>
+            <input id="returnUrl" name="returnUrl" type="hidden" value="" />
+            <input class="buttonRosa" name="submit" type="submit" value="ENTRAR" /> 
+        </form>
+        
+        
+        
+        <form class="login" action ="/Users/Register" method ="post" onsubmit="return validarCamposRequeridosCreate(this)">
+        	<div class="tituloRosa warning"><font class="textRosa">SOY NUEVO CLIENTE</font> DE VENCA.ES</div>  
+            <br/>
+            <fieldset>
+                <div class="borderField errorField">
+                    <input class="fieldForm" id="RegisterEmail" maxlength="50" name="RegisterEmail" type="email" value="" placeholder="E-mail"/>
+                </div>
+                <p id="RegisterEmailError" class="red">Por favor, escriba una dirección de correo electrónico válida</p>
+            </fieldset>
+            <input id="returnUrl" name="returnUrl" type="hidden" value="" />
+            <p id="PasswordError" class="red"></p>  
+                
+            <input class="buttonRosa" name="submit" type="submit" value="ENTRAR" />
+        </form>
+        <div class="fieldErrorMessage"></div>
+        <div style="clear:both"></div>
+        
+        <div id="tituloServicios">SERVICIOS</div>
+        <div id="servicios">
+            <ul id="serviciosContainer">
+            	<li><a id="pedido"  class="itemServicio" href="/StaticPages/Services">Pedido</a></li>
+                <li><a id="entrega" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Entrega</a></li>
+                <li><a id="pago" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Pago</a></li>
+                <li><a id="venta" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Servicio<br/>post-venta</a></li>
+                <li><a id="preguntas" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Preguntas<br/>frecuentes</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <ul id="info">
+                <li class="itemInfo"><a href="/StaticPages/SaleGeneralConditions">Condiciones de venta</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice">Aviso legal</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice#proteccion">Protección de datos</a></li>
+                <div style="clear:both"></div>
+                <br/>
+                <li class="itemInfo"><a href="/StaticPages/CookiesPolicy">Política de cookies</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/GoToClassicWeb">Ver web clásica</a></li>
+            </ul>
+        </div>
+    
+    </div>
+</body>
+</html>
