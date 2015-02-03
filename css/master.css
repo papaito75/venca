@@ -87,25 +87,18 @@ body {
 }
 
 #header {
-    padding: 0px 15px 0px 15px;
-    height: 40px;
+    /*padding: 0px 15px 0px 15px;
+    height: 40px;*/
     background-color: #FFFFFF;
 }
 
 #logo a {
     text-indent: -99999px;
     float: left;
-    width: 120px;
-    height: 40px;
-    background-image: url("../Content/img/logo.jpg");
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: left;
     display: block;
-}
-
-#cart {
-    float: right;
-    width: 120px;
-    height: 40px;
 }
 
 #cart_total {
@@ -119,40 +112,35 @@ body {
 
 #cart_details {
     color: #FFFFFF;
-    padding: 14px 0 14px 0px;
-    float: right;
-    width: 20px;
+	display:inline-block;
     font-size: 12px;
-    text-align: center;
-    background-image: url("../Content/img/cesta.png");
-    background-position: right center;
-    background-repeat: no-repeat;
+	text-decoration:none;
 }
 
 #searcher {
-    width: 270px;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 #fieldsearcher {
-    border: 1px solid #606060;
-    width: 220px;
+    border: none;
     height: 22px;
     float: left;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 15px;
+	width:100%;
 }
 
 #finder {
-    background-image: url("../Content/img/lupa.gif");
+    background-image: url("../Content/img/lupa.svg");
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
+    background-size: 25px 25px;
+	background-color: #FFF;
     border: 0px;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-
+    height: 25px;
+    width: 25px;
+	right:20px;
+	position:absolute;
 }
 
 #home img {
@@ -195,8 +183,10 @@ body {
 }
 
 #footer {
-    clear: left;
-    margin: 15px;
+	text-align:center;
+	background-color:#d0d0d0;
+	padding: 25px 0px;
+	font-size: 10px;
 }
 
 #footer p, #footer li {
@@ -336,8 +326,9 @@ body {
 }
 
 .small_print {
-    width: 270px;
-    font-size: 9px;
+	/* width: 270px; */
+	font-size: 9px;
+	margin-top: 15px;
 }
 
 .combo, .combo_product, .combo_big, .combo_little, .combo_medium, .combo_advantage_model {
@@ -1849,4 +1840,265 @@ fieldset#selectRefund, fieldset#content_refund
 
 .partners p {
     margin-bottom: 8px;
+}
+
+
+/*********************************************************************
+ELEMENTOS NUEVOS
+***********************************************************************/
+
+.menu li a {
+	background-image: url(../Content/img/flechaItemMenu.svg);
+	background-repeat:no-repeat;
+	background-size:12px;
+	background-position: right 16px;
+	border-right: 13px solid transparent;	
+}
+
+#borderSearcher {
+	border-color: #e0e0e0;
+	border-style: solid;
+	border-width: 1px;
+	height: 26px;
+	padding: 7px 6px;
+}
+
+#tituloServicios {
+	font-size: 14px;
+	padding-left:18px;
+	color:#58585a;
+}
+
+#servicios {
+	background-color:#58585a;
+	color:#FFF;
+	font-size: 13px;
+	text-align:center;
+	position:relative;
+}
+
+#serviciosContainer {
+	padding:25px 20px;
+}
+
+.itemServicio {
+	background-repeat:no-repeat;
+	float:left;
+	padding-top: 63px;
+	font-size: 13px;
+}
+
+.itemServicioPadding {
+	margin-left:60px;
+	font-size: 13px;
+}
+
+#pedido {
+	background-image: url(../Content/img/pedido.svg);
+	background-size: contain;
+	width:60px;
+}
+
+#entrega {
+	background-image: url(../Content/img/entrega.svg);
+	background-size: contain;
+	width:83px;
+}
+
+#pago {
+	background-image: url(../Content/img/euro.svg);
+	background-size: contain;
+}
+
+#venta {
+	background-image: url(../Content/img/venta.svg);
+	background-position: 8px 0px;
+	background-size: 75%;
+}
+
+#preguntas {
+	background-image: url(../Content/img/preguntas.svg);
+	background-size: 76%;
+	background-position: 6px 0px;
+}
+
+#menuTop {
+	height: 55px;
+	border-bottom:#000000 solid;
+	border-width:1px;
+	text-align:right;
+}
+
+#botonMenu {
+	background-image: url(../Content/img/botonMenu.svg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:100%;
+	float:left;
+	width: 53px;
+}
+
+#logo {
+	background-image: url(../Content/img/logoVenca.svg);
+	background-repeat:no-repeat;
+	background-position: 0px 3px;
+	background-size:100%;
+	height:100%;
+	float:left;
+	width: 160px;
+}
+
+#logo h1 {
+	width:100%;
+	height:100%;
+}
+
+.botonMiCuenta {
+	background-repeat:no-repeat;
+	background-position: 15px 0px;
+	background-size:40px;
+	display:inline-block;
+	width: 70px;
+	margin-top:5px;
+	font-size:9px;
+	padding-top:38px;
+	text-align:center;
+}
+
+.botonMiCuenta a{
+	text-decoration:none;
+	color: #58585A;
+	
+}
+
+#botonMiCuenta {
+	background-image: url(../Content/img/botonMiCuenta.svg);
+
+}
+
+#botonMiCuentaRosa {
+	background-image: url(../Content/img/botonMiCuentaRosa.svg);
+}
+
+#cart {
+	background-image: url(../Content/img/botonBolsa.svg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:100%;
+	float:right;
+	width: 53px;
+}
+
+#cartNumero {
+	background-image: url(../Content/img/botonBolsaNumero.svg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:100%;
+	float:right;
+	width: 53px;
+	padding-top:5px;
+}
+
+#tituloServicios {
+	padding-top:45px;
+	padding-bottom:10px;
+}
+
+#tel {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+
+#tel a {
+	text-decoration:none;
+}
+
+.menuRosa a{
+	color:#DE007A;
+	background-image:none !important;
+}
+
+#cesta {
+	position: absolute;
+	top: 9px;
+	right: 4px;
+	color:#FFF;
+}
+
+.fullSize {
+	width:100%;
+	height:100%;	
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#serviciosContainer a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#miCuenta a {
+	color:#58585A;
+	text-decoration:none;
+}
+
+/* ************************************************************************************************************* */
+/* ICONOS SERVICIO RESPONSIVE*/
+/* ************************************************************************************************************* */
+
+@media only screen and (min-width: 589px) {
+	#serviciosContainer {
+		width:589px;
+		height:95px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 468px) and (max-width: 588px) {
+	#serviciosContainer {
+		width:429px;
+		height: 200px;
+		margin: 0 auto;
+	}
+	#preguntas {
+		margin-left:185px;
+		margin-top:15px;
+	}
+}
+
+@media only screen and (min-width: 348px) and (max-width: 467px) {
+	#serviciosContainer {
+		width:295px;
+		height: 190px;
+		margin: 0 auto;
+	}
+	#venta {
+		margin-top:15px;
+	}
+	#preguntas {
+		margin-top:15px;
+	}
+}
+
+@media only screen and (max-width: 347px) {
+	#serviciosContainer {
+		width:207px;
+		height:293px;
+		margin: 0 auto;
+	}
+	#pago {
+		margin-left: 14px;
+		margin-top:15px;
+	}
+	#venta {
+		margin-top:15px;
+		margin-left:80px;
+	}
+	#preguntas {
+		margin-top:15px;
+		margin-left:74px;
+	}
 }
