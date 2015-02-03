@@ -1,0 +1,1852 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+
+    display: block;
+
+}
+
+body {
+
+    line-height: 1;
+
+}
+
+ol, ul {
+
+    list-style: none;
+
+}
+
+blockquote, q {
+
+    quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+
+    content: '';
+
+    content: none;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+}
+
+/*********************************************************************/
+/* mis estilos *******************************************************/
+
+body {
+    font-family: Verdana, "MS Trebuchet", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    width: 100%;
+}
+
+#header {
+    padding: 0px 15px 0px 15px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+#logo a {
+    text-indent: -99999px;
+    float: left;
+    width: 120px;
+    height: 40px;
+    background-image: url("../Content/img/logo.jpg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#cart {
+    float: right;
+    width: 120px;
+    height: 40px;
+}
+
+#cart_total {
+    padding: 14px 8px 14px 0px;
+    float: left;
+    font-size: 12px;
+    text-align: right;
+    text-decoration: none;
+    width: 90px;
+}
+
+#cart_details {
+    color: #FFFFFF;
+    padding: 14px 0 14px 0px;
+    float: right;
+    width: 20px;
+    font-size: 12px;
+    text-align: center;
+    background-image: url("../Content/img/cesta.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#searcher {
+    width: 270px;
+    margin: 10px auto;
+}
+
+#fieldsearcher {
+    border: 1px solid #606060;
+    width: 220px;
+    height: 22px;
+    float: left;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#finder {
+    background-image: url("../Content/img/lupa.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border: 0px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+
+}
+
+#home img {
+    width: 100%;
+}
+
+.menu li {
+    border-bottom: 1px solid #c0c0c0;
+    background-image: url("../Content/img/arrow_pink.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    height: 14px;
+    font-size: 14px;
+    padding: 13px 0px 13px 15px;
+    display: block;
+}
+
+.menu-services li {
+    clear: left;
+    background-color: #d0d0d0;
+    border-bottom: 1px solid #fff;
+    background-image: url("../Content/img/arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.menu-services a {
+    text-decoration: none;
+    color: #000000;
+    height: 14px;
+    font-size: 14px;
+    padding: 13px 0px 13px 15px;
+    display: block;
+}
+
+#footer {
+    clear: left;
+    margin: 15px;
+}
+
+#footer p, #footer li {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#footer a {
+    color: #000000;
+}
+
+#footer h1 {
+    background-image: url("../Content/img/info.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-image: url("../Content/img/degrade_pink.png");
+    background-position: left center;
+    background-repeat: repeat;
+    background-color: #e2007a;
+    padding: 8px 0px;
+    color: #fff;
+    height: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px 0px;
+}
+
+.subsection {
+    background-image: url("../Content/img/degrade.png");
+    background-position: left center;
+    background-repeat: repeat;
+    background-color: #909090;
+    padding: 8px 0px;
+    color: #fff;
+    height: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2px 0px 0px 0px;
+}
+
+#shop-window-list {
+    margin: 0 0 0 15px;
+}
+
+#shop-window-list li {
+    width: 140px;
+    display: inline;
+    padding: 10px 10px 10px 0;
+    float: left;
+    height: 250px;
+}
+
+#shop-window-list img {
+    width: 140px;
+    margin-bottom: 5px;
+}
+
+#shop-window-list li a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    color: #000;
+}
+
+.bold, #shop-window-list li a span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.halfbold, .slidedown h2 {
+    font-weight: bold;
+}
+
+.content, #product_file, #promo-carousel, #promo-text {
+    padding: 15px 15px 15px 15px;
+    clear: left;
+}
+
+.contentHomeDelivery {
+    padding: 0px 15px 15px 15px;
+    clear: left;
+}
+
+.content fieldset, .login fieldset, #product_file fieldset, #filters fieldset {
+    padding: 0 0 15px 0;
+}
+
+#product_file fieldset p {
+    float: left;
+    width: 190px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#product_file span {
+    float: right;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#product_file label {
+    font-size: 13px;
+    display: block;
+    padding: 0px 0px 3px 0px;
+}
+
+#product_file img {
+    width: 300px;
+}
+
+#carousel {
+    width: 300px;
+}
+
+#carousel img {
+    width: 60px;
+    height: 70px;
+    padding: 0px 16px 0px 0px;
+}
+
+#carousel a:last-child img {
+    padding-right: 0px;
+}
+
+.small_print {
+    width: 270px;
+    font-size: 9px;
+}
+
+.combo, .combo_product, .combo_big, .combo_little, .combo_medium, .combo_advantage_model {
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+
+.combo {
+    width: 130px;
+}
+
+.combo_product {
+    width: 170px;
+}
+
+.combo_big {
+    width: 260px;
+}
+
+.combo_little {
+    width: 53px;
+}
+
+.combo_medium {
+    width: 70px;
+}
+
+.combo_advantage_model {
+    width: 185px;
+}
+
+.big_button {
+    background-image: url("../Content/img/degrade_pink.png");
+    background-position: left center;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    border: 0 solid #606060;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 260px;
+    height: 44px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 11px;
+}
+
+.final_button {
+    background-image: url("../Content/img/degrade_pink.png");
+    background-position: left center;
+    background-size: auto 60px;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    border: 0 solid #606060;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 290px;
+    height: 60px;
+    border-radius: 5px;
+    clear:both;
+    float:left;
+    margin-bottom: 15px;
+}
+
+.headline {
+    background-image: url("../Content/img/degrade.png");
+    background-position: left center;
+    background-repeat: repeat;
+    padding: 8px 0;
+    color: #fff;
+    height: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    clear: left;
+}
+
+.grey_background {
+    clear: left;
+    background-color: #d0d0d0;
+    padding: 15px;
+}
+
+.login, .myaccount, #geotrust, #myorder, #timeToExpire {
+    background-color: #fff;
+    width: 260px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#myorder {
+    min-height: 140px;
+    float: left;
+}
+
+#timeToExpire {
+   
+    float: left;
+    clear: both;
+}
+
+.myaccount, #geotrust, #myorder {
+    margin-top: 15px;
+}
+
+#geotrust {
+    background-image: url("../Content/img/logoGeotrust.gif");
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    clear:both;
+}
+
+#geotrust p {
+    margin: 0 0 0 100px;
+}
+
+.login h2, #sale-general-conditions h1, .slidedown h1 {
+    color: #e2007a;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.login label, .message label, .content label {
+    display: block;
+    margin: 0 0 3px 0;
+}
+
+.content form#CreditCardForm label,
+.content form#bankDebit label {
+    height: 22px;
+    line-height: 22px;
+    padding-right: 5px;
+}
+
+.content form#CreditCardForm input,
+.content form#bankDebit input {
+    margin-top: 0px;
+}
+
+.content form#CreditCardForm input[type=checkbox],
+.content form#bankDebit input[type=checkbox] {
+    margin-top: 4px;
+}
+
+.textbox, .mini_textbox, .little_textbox, .medium_textbox {
+    font-size: 18px;
+    height: 22px;
+    color: #000;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+.textbox:focus, .mini_textbox:focus, .little_textbox:focus, .medium_textbox:focus,
+.combo:focus, .combo_product:focus, .combo_big:focus, .combo_little:focus, .combo_medium:focus, 
+.combo_advantage_model:focus {
+	border: 1px solid #B2C2FF;
+	background: #FFEEDD;
+	font-weight: bold;
+}
+
+.textbox::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+	font-weight: normal;
+}
+.textbox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+    font-weight: normal;
+}
+.textbox::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+    font-weight: normal;
+}
+.textbox:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+    font-weight: normal;
+}
+
+.textbox {
+    width: 270px;
+    display: block;
+}
+
+.medium_textbox {
+    width: 244px;
+    display: block;
+}
+
+.little_textbox {
+    width: 100px;
+    display: block;
+}
+
+.mini_textbox {
+    width: 42px;
+    display: inline;
+    margin: 3px 5px 0px 0px;
+}
+
+.little_button {
+    color: #FFFFFF;
+    border: 0px solid #606060;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.normal {
+    background-image: url("../Content/img/degrade.png");
+    background-position: left center;
+    background-repeat: repeat;
+}
+
+.highlight {
+    background-image: url("../Content/img/degrade_pink.png");
+    background-position: left center;
+    background-repeat: repeat;
+}
+
+.link {
+    color: #000;
+    font-size: 11px;
+    margin: 0 0 15px 0;
+    text-decoration: underline;
+}
+
+.block {
+    display: block;
+}
+
+.cart_empty {
+    background-color: #fff;
+    width: 260px;
+    margin-bottom: 15px;
+    padding: 0px 15px 0px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#advantage >div{
+	display:inline-block;
+	padding: 15px 0 15px 0;
+    border-bottom: 1px solid #e2007a;
+	width: 100%;
+}
+
+#advantage >div:last-child{
+    border-bottom: 0px solid #e2007a;
+}
+
+.advantage-image{
+	display:inline-block;
+	width: 65px;
+	float:left;
+	margin: 0 15px 0 0;
+}
+
+#mycart-header {
+     width: 290px;
+     padding: 0px;
+     clear: left;
+     height:40px;
+}
+
+#mycart-header a {
+    float:left;
+    margin-top:10px;
+}
+
+#mycart-header input{
+    float:right;
+}
+
+
+#mycart div {
+	width: 260px;
+    clear: left;
+    padding: 15px;
+    background-color: #fff;
+    
+}
+
+#mycart div img, .advantage-image img {
+	display: block;
+	float: left;
+    margin: 0 10px 10px 0;
+    width: 65px;
+}
+
+.advantage-image img {
+    width: 65px;
+}
+
+#mycart div ul, #advantage div ul {
+    display: block;
+    float: left;
+    margin: 0 15px 0 0;
+    width: 110px;
+}
+
+#advantage li {
+    margin: 0px 0px 8px 0;
+}
+
+#advantage input[type="text"] {
+    margin: 0px 20px 0px 0;
+}
+
+#advantage label {
+    display: block;
+    float: left;
+    width: 40px;
+}
+
+.advantage-discount p {
+    float: left;
+    width: 129px;
+}
+
+.check{
+	position: absolute;
+}
+
+#advantage h1 {
+    float: left;
+    width: 170px;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+#mycart div li:first-child, #advantage div li:first-child, .advantage-discount p {
+    font-weight: bold;
+    line-height: 12px;
+    padding-bottom: 5px;
+}
+
+#advantage div li:first-child {
+    padding-bottom: 0px;
+}
+
+#mycart div:last-child {
+    border-radius: 0 0 5px 5px;
+    margin: 0 0 10px 0;
+}
+
+#mycart div:first-child {
+    border-radius: 5px 5px 0 0;
+    margin: 10px 0 0 0;
+}
+
+#mycart h3, #advantage h3 {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    line-height: 12px;
+}
+
+#advantage h3{
+	width: 50px;
+}
+
+#mycart h3{
+	width: 60px;
+    height: 99px;
+}
+
+.advantage-discount h2 {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    width: 102px;
+    padding: 5px 0 5px 0;
+}
+
+.advantage-discount img {
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+.advantage-discount p {
+    padding: 5px 0 5px 0;
+}
+
+.myaccount li {
+    clear: left;
+    height: 20px;
+}
+
+.myaccount li:last-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.myaccount li p, #myorder p {
+    text-align: right;
+    float: left;
+    width: 129px;
+}
+
+#orderSummary 
+{
+    clear:both;
+}
+
+#myorder fieldset {
+    float: left;
+    margin: 8px 0px 8px 0px;
+    width: 129px;
+    height: 40px;
+}
+
+#myorder fieldset p {
+    padding: 15px 0 0 0;
+}
+
+#myorder span.unused 
+{
+    color: #006000;
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+#myorder label {
+    width: 270px;
+    color: #e2007a;
+    font-weight: bold;
+    padding: 0 0 8px 0;
+}
+
+.advantage-headline {
+	font-weight: bold;
+    width: 270px;
+    color: #e2007a;
+    padding: 0 0 8px 0;
+}
+
+.message {
+    padding: 15px 15px 15px 15px;
+    clear: left;
+    border-top: 1px solid #e2007a;
+}
+
+.requiered-field, .red {
+    color: red;
+}
+
+.radio {
+    margin: 0 5px 0 0;
+}
+
+.checkbox {
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.content fieldset label[for="optin"] {
+    margin: 0 0 0 30px;
+    font-size: 10px;
+}
+
+#sex>label, #sex>input {
+    float: left;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.slidedown p {
+    margin: 0 0 10px 0;
+}
+
+.menu_slidedown {
+    clear: left;
+    background-color: #e9e9e9;
+    padding: 13px 0 13px 15px;
+    border-top: 1px solid #909090;
+    background-image: url("../Content/img/more.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.menu_slidedown_less {
+    clear: left;
+    background-color: #e9e9e9;
+    padding: 13px 0 13px 15px;
+    border-top: 1px solid #909090;
+    background-image: url("../Content/img/less.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.more_info li:last-child {
+    border-bottom: 1px solid #909090;
+}
+
+.steps {
+    clear: left;
+    margin: 0 0 15px 0;
+}
+
+.steps li {
+    width: 84px;
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
+    float: left;
+    text-align: center;
+}
+
+.full_step {
+    background-color: #f8d3e3;
+}
+
+.empty_step {
+    background-color: #d0d0d0;
+}
+
+.frame {
+    border: 1px solid #000;
+}
+
+.margin15px {
+    margin: 0 0 0 15px;
+}
+
+.margin20px {
+    margin: 0 0 0 20px;
+}
+
+.margin75px {
+    margin: 0 0 0 75px;
+}
+
+.confirmation {
+    background-image: url("../Content/img/degrade_background.gif");
+    background-position: right top;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #e2007a;
+    height: 200px;
+}
+
+.payment-to-delivery, .bank-account-payment {
+    width: 260px;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.postal-office-delivery {
+    width: 240px;
+    height: 25px;
+    background-image: url("../Content/img/logo_correos.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 0 0 0;
+}
+
+.credit-card {
+    width: 290px;
+    height: 60px;
+    background-image: url("../Content/img/logo_tarjetas.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0px 0;
+    padding: 3px 0 0 0;
+}
+
+.home-delivery {
+    background-image: url("../Content/img/logo_domicilio.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 25px;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+.mrw {
+    background-image: url("../Content/img/logo_mrw.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 290px;
+    color: #e2007a;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.puntopack {
+    background-image: url("../Content/img/logo_puntopack.gif");
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 30px;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+}
+
+.paypal {
+    background-image: url("../Content/img/logo_paypal.gif");
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 30px;
+    color: #e2007a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+}
+#sale-general-conditions {
+    margin: 15px 15px 15px 15px;
+}
+
+.index li, .index p, .index a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+#sale-general-conditions ol li, .index p {
+    margin: 0 0 10px 0;
+    list-style: decimal inside none;
+}
+
+#sale-general-conditions #file-gestion 
+{
+    float: right;
+    clear: both;
+}
+
+#sale-general-conditions .black
+{
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+}
+
+#sale-general-conditions #file-gestion a
+{
+    text-decoration : none;
+    color: black;
+    padding-left: 25px;
+}
+
+font-weight: bold
+.index a {
+    font-size: 11px;
+    margin: 0 0 15px 0;
+    text-decoration: underline;
+    display: block;
+}
+
+#sale-general-conditions h1, .slidedown h1 {
+    border-bottom: 1px solid #e2007a;
+    margin-top: 15px;
+}
+
+#userdata ul {
+    border: 1px solid #000;
+    margin: 15px 0 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#userdata li span {
+    text-transform: lowercase;
+}
+
+#userdata a {
+    text-decoration: none;
+}
+
+.error, .input-validation-error {
+    border: 2px solid red;
+    color: red;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+#bulky, #advantage {
+    background-color: #f8d3e3;
+    border: 1px solid #e2007a;
+    border-radius: 5px;
+}
+
+#advantage {
+	width: 260px;
+    margin: 15px 0 15px 0;
+    padding: 0 15px 0 15px;
+}
+
+#bulky {
+	margin: 0px 0 15px 0;
+    width: 280px;
+    font-size: 11px;
+    color: #000;
+    padding: 5px;
+}
+
+table tbody tr td {
+    padding: 0 20px 8px 0;
+}
+
+table.opening-hours tbody tr td:first-child, table.opening-hours tbody tr:first-child, table.orders tbody tr:first-child {
+    font-weight: bold;
+}
+
+#userdata-buttons {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.little_link_button {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.little_link_button span {
+    padding: 10px;
+    display: block;
+}
+
+#refineresults {
+    padding: 10px 15px 10px 15px;
+    margin: 0 0 10px 0;
+    background-color: #dfdfdf;
+}
+
+#refineresults label {
+    width: 155px;
+    float: left;
+}
+
+#refineresults fieldset {
+    padding: 0 0 10px 0;
+}
+
+#refineresults input:last-child {
+    margin: 0 0 0 103px;
+}
+
+.link_slidedown {
+    color: #000;
+    font-size: 13px;
+    margin: 0 25px 15px 0;
+    text-decoration: underline;
+}
+
+.message404 {
+    background-image: url("../Content/img/404.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 300px;
+    padding: 0 0 0 100px;
+}
+
+.message404 div {
+    padding: 70px 0 0 50px;
+    width: 160px;
+}
+
+.more_products {
+    margin: 0 0 45px 0;
+}
+
+/******************************PROMOTION SET***************************************/
+
+#promo-image >img{
+	width: 100%;
+}
+
+#promo-carousel a{
+	display: inline-block;
+	width: 22%;
+	padding:0 8px 0 0;
+}
+
+#promo-carousel a:last-child{
+	padding:0 0 0 0;
+}
+
+#promo-carousel img{
+	width: 100%;
+}
+
+#promo-text h1{
+ 	font-size: 25px;
+ 	color: #e2007a;
+ 	font-weight: bold;
+ 	line-height: 26px;
+}
+
+#promo-text h2{
+ 	color: #e2007a;
+ 	font-weight: bold;
+}
+
+#promo-text p, #promo-text h1, #promo-text ul{
+	padding: 0 0 12px 0;
+}
+
+#promo-text p {
+    clear: both;
+    display: inline-block;
+    float: left;
+}
+
+#promo-text p, #promo-text ul, #promo-text h2{
+	line-height: 18px;
+	font-size: 14px;
+}
+
+img#topoRojo{
+    float: left;
+    width: 25px !important;
+}
+
+#product_file span.topoRojoText, #mycart span.topoRojoText {
+    color: #e7007d;
+    font: inherit ;
+    float: none
+}
+
+#shop-window-list span.price_before {
+    text-decoration: line-through;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#shop-window-list span.text_price_before {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#shop-window-list span.price_from_3digits {
+    font-size: 11px;
+}
+
+/* AdultContent */
+body.adultcontent {
+	width: 320px;
+	height: 480px;
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: Calibri;
+	background-color: #E10174;
+	color: #FFF;
+	text-align: center;
+}
+
+body.adultcontent #content {
+	width: 320px;
+	margin: 10 auto;
+	margin-bottom: 20px;
+}
+
+body.adultcontent h1	{
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 52px;
+	border-bottom: 2px solid white; 
+	margin-bottom: 25px;
+}
+
+body.adultcontent p {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+body.adultcontent #button a {
+	width: 120px;
+}
+
+body.adultcontent #button img:hover {
+	background-color: #CA9F5A;
+}
+
+fieldset#BankDebitEntry #CreditCardNumber1, fieldset#BankDebitEntry #CreditCardNumber2 
+{
+    width: 42px;
+    text-align: center;
+    padding: 4px 6px;
+    margin-right: 2px;
+    height: 22px;
+}
+
+fieldset#BankDebitEntry #CreditCardNumber3
+{
+    width: 24px;
+    text-align: center;
+    padding: 4px 6px;
+    margin-right: 2px;
+    height: 22px;
+}
+
+fieldset#BankDebitEntry #CreditCardNumber4
+{
+    display: inline;
+    width: 100px;
+    text-align: center;
+    padding: 4px 6px;
+    height: 22px;
+}
+
+fieldset#BankDebitEntry .error
+{
+    border: 1px solid #FF0000;
+}
+
+.more_info_link .menu_slidedown {
+    clear: left;
+    background-color: #fff;
+    padding: 0;
+    border-top: 0px solid #fff;
+    background-image: none;
+    background-position: left;
+}
+
+.more_info_link .menu_slidedown_less {
+    clear: left;
+    background-color: #fff;
+    padding: 0;
+    border-top: 0px solid #fff;
+    background-image: none;
+    background-position: left;
+    margin-bottom: 0px;
+}
+
+/* Refund */
+
+#content_refund {
+    display: none;
+}
+
+div.refund_form {
+    display: block;
+    background-color: #F8D3E3; 
+    border: 1px solid #E2007A;
+    border-radius: 5px 5px 5px 5px;
+    margin: 15px 0;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    width: 260px;
+}
+div.refund_form span#errorRefund {
+    clear:both;
+    color: red;
+    display: none;				
+}
+div.remove_refund_form {
+    display: none;
+}
+div.remove_refund_form span#associateRefundNumber {
+    font-weight: bold;
+}
+
+
+#RefundNumber {
+    display: inline;
+}
+a#ValidateRefund {
+    padding: 8px 10px;
+    text-decoration: none;
+    height: 34px;
+    margin-left: 10px;
+}
+fieldset#selectRefund label 
+{
+    display: inline;
+}
+fieldset#selectRefund, fieldset#content_refund
+{
+    padding: 0 0 7px;
+}
+
+#contentRefundRestOfAmount, #contentRefundAmount {
+    display: none;
+}
+.corporativeColor {
+    color: #E7007D;
+}
+
+#contentRefundRestOfAmount, #contentGiftCardUnUsedAmount {
+    margin-bottom: 10px;
+    margin-top: -7px;
+    width: 274px;
+}
+#RefundRestOfAmount, #GiftCardUnUsedAmount{
+    float: right;
+}    
+
+.regalo_button {
+	display:block;
+	background-image: url('../../Content/img/degrade_pink.png');
+	background-position: left top;
+	background-repeat: repeat;
+	color: #FFFFFF;
+	border: 0 solid #606060;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	height: 13px;
+	text-decoration: none;
+	padding: 13px;
+	margin-top: 30px;
+} 
+
+.regalo_module {
+  background: none repeat scroll 0 0 #F7F7F7;
+  float: left;
+  margin: 0 12px 30px;
+  padding: 9px 9px 11px;
+  position: relative;
+  width: 280px; }
+  .regalo_module .regalo_button {
+    margin-top: 10px; }
+    
+#GiftsTitle img {
+    width: 320px;
+}
+
+/******************************PRUEBANOS***************************************/
+
+#pruebame form label{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 10px 0px 10px 0px;
+	color: #000;
+	font-family: Arial, "Helvetica", sans-serif;
+}
+
+#pruebame .input{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 10px 0px;
+	font-size: 20px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+.pruebame2 a.final_button, .pruebame3 a.final_button {
+    height: 18px;
+    padding: 21px 0;
+    text-decoration: none;
+    vertical-align: middle;    
+}
+
+.pruebame2 .final_button, .pruebame3 .final_button {
+    text-transform: none;
+}
+.pruebame2 .pruebame3 .error{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 0px 0px;
+	font-size: 20px;
+	border: 1px solid red;
+	padding: 5px
+}
+
+#pruebame form p{
+	float:left;
+	margin: 7px 10px 0px 0px;
+}
+
+.pruebame2 {
+    background-image: url("/Content/img/GiftCard/Pruebame/Saldo.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.pruebame3 {
+    background-image: url("/Content/img/GiftCard/Pruebame/Warning.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 20px 0 0 20px;
+}
+
+.pruebame2 .text, .pruebame3 .text {
+    width: 55%;
+    display: block;
+}
+
+.pruebame2 .buttons, .pruebame3 .buttons {
+    display: inline-table;
+}
+
+.pruebame2 h1, .pruebame3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+.pruebame3 h2 {
+    line-height: 16px;
+	font-size: 14px;
+	color: #000000;
+ 	font-weight: bold;
+}
+
+/******************************Percentage Not Applied***************************************/
+
+#mycart div #percentageNotApplied img {
+        width: 15px;
+}
+
+#mycart div #percentageNotApplied .topoRojoText {
+        color: #FF0000;
+        font-size: 11px
+}
+
+#mycart div #percentageNotApplied {
+    width: 245px;
+    padding: 0px
+}
+
+
+/****************************** TARJETA REGALO***************************************/
+
+#tarjetaRegalo form label{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 0px 10px 10px 0px;
+	color: #000;
+	font-family: Arial, "Helvetica", sans-serif;
+}
+
+#tarjetaRegalo  .input{
+	width: 250px;
+	float:left;
+	margin: 0px 10px 10px 0px;
+	font-size: 20px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+#tarjetaRegalo .error{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 0px 0px;
+	font-size: 20px;
+	border: 1px solid red;
+	padding: 5px
+}
+
+#tarjetaRegalo  form p{
+	float:left;
+	margin: 7px 10px 0px 0px;
+}
+
+.tarjetaRegalo2 {
+    background-image: url("../Content/img/GiftCard/TarjetaRegalo/saldo.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.tarjetaRegalo3 {
+    background-image: url("../Content/img/GiftCard/TarjetaRegalo/warning.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.tarjetaRegalo2 div, .tarjetaRegalo3 div {
+    width: 55%;
+}
+
+.tarjetaRegalo2 h1, .tarjetaRegalo3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+.tarjetaRegalo3 h2 {
+    line-height: 16px;
+	font-size: 14px;
+	color: #000000;
+ 	font-weight: bold;
+}
+
+.tarjetaRegalo2 a.final_button, .tarjetaRegalo3 a.final_button {
+    height: 18px;
+    padding: 21px 0;
+    text-decoration: none;
+    vertical-align: middle;    
+}
+
+.tarjetaRegalo2 h1, .tarjetaRegalo3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+/****************************** VISTETE GRATIS ***************************************/
+
+#VisteteGratis form label{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 0px 10px 10px 0px;
+	color: #000;
+	font-family: Arial, "Helvetica", sans-serif;
+}
+
+#VisteteGratis  .input{
+	width: 250px;
+	float:left;
+	margin: 0px 10px 10px 0px;
+	font-size: 20px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+#VisteteGratis .error{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 0px 0px;
+	font-size: 20px;
+	border: 1px solid red;
+	padding: 5px
+}
+
+#VisteteGratis  form p{
+	float:left;
+	margin: 7px 10px 0px 0px;
+}
+
+.VisteteGratis2 {
+    background-image: url("../Content/img/GiftCard/VisteteGratis/saldo.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.VisteteGratis3 {
+    background-image: url("../Content/img/GiftCard/VisteteGratis/warning.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.VisteteGratis2 div, .VisteteGratis3 div {
+    width: 55%;
+}
+
+.VisteteGratis2 h1, .VisteteGratis3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+.VisteteGratis3 h2 {
+    line-height: 16px;
+	font-size: 14px;
+	color: #000000;
+ 	font-weight: bold;
+}
+
+.VisteteGratis2 a.final_button, .VisteteGratis3 a.final_button {
+    height: 18px;
+    padding: 21px 0;
+    text-decoration: none;
+    vertical-align: middle;    
+}
+
+.VisteteGratis2 h1, .VisteteGratis3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+/**** REGALO **/
+
+
+#regalo form label{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 10px 0px 10px 0px;
+	color: #000;
+	font-family: Arial, "Helvetica", sans-serif;
+}
+
+#regalo .input{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 10px 0px;
+	font-size: 20px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+.regalo2 a.final_button, .regalo3 a.final_button {
+    height: 18px;
+    padding: 21px 0;
+    text-decoration: none;
+    vertical-align: middle; 
+    margin-top: 25px;   
+}
+
+.regalo2 .final_button, .regalo3 .final_button {
+    text-transform: none;
+}
+.regalo2 .regalo3 .error{
+	width: 55px;
+	float:left;
+	margin: 0px 10px 0px 0px;
+	font-size: 20px;
+	border: 1px solid red;
+	padding: 5px
+}
+
+#regalo form p{
+	float:left;
+	margin: 7px 10px 0px 0px;
+}
+
+.regalo2 {
+    background-image: url("/Content/img/GiftCard/Regalo/Saldo.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 0 0 20px;
+}
+
+.regalo3 {
+    background-image: url("/Content/img/GiftCard/Regalo/Warning.jpg");
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 20px 0 0 20px;
+}
+
+.regalo2 .text, .regalo3 .text {
+    width: 55%;
+    display: block;
+}
+
+.regalo2 .buttons, .regalo3 .buttons {
+    display: inline-table;
+}
+
+.regalo2 h1, .regalo3 h1 {
+    line-height: 25px;
+	font-size: 20px;
+	color: #e2007a;
+ 	font-weight: bold;
+}
+
+.regalo3 h2 {
+    line-height: 16px;
+	font-size: 14px;
+	color: #000000;
+ 	font-weight: bold;
+}
+
+.headTitle {
+    font-family: Roboto, Verdana;
+    font-weight: 900;
+    font-size: 50px;
+    color: #acabab;
+    clear: left;
+    padding: 15px;    
+}
+
+.newsletterPromotion {
+    font-family: Roboto, Verdana;
+    font-weight: 500;
+    font-size: 14px;
+    color: #e2017b;
+}
+
+.newsletterPromotion span.RobotoBoldHigh {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.newsletterPromotion span.RobotoBoldHigh sup,
+.thanksNewsletter p span sup {
+    vertical-align: text-top;
+    font-size: smaller; 
+}
+
+
+.newsletterPromotion span.RobotoBold {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.contentNewsletter p {
+    padding-bottom: 25px;
+}
+
+.contentNewsletter input[type=submit] {
+    margin-bottom: 25px;
+    font-family: roboto, Verdana;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 22px;
+    padding: 0px;
+}
+
+.contentNewsletter .mandatoryText {
+    color: #acabab;
+    display: block;
+    width: 270px;
+    text-align: right;
+    padding-bottom: 0px;
+    font-size: 9px;
+}
+.thanksNewsletter {
+    text-align: center;
+}
+
+.thanksNewsletter p {
+
+    font-size: 17px;
+    color: #e2017b;
+    font-family: roboto, Verdana;
+    font-weight: 300;
+    padding: 7px 0;
+}
+
+.thanksNewsletter p span {
+    font-weight: bold;
+}
+
+.thanksNewsletter a {
+    margin: 25px 0 25px 0;
+    font-family: roboto, Verdana;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 22px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.partners {
+    height: 155px;
+}
+
+.partners p {
+    margin-bottom: 8px;
+}
