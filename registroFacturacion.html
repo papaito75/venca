@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+<title>Venca</title>
+</head>
+
+<body>
+	<a name="inicio"></a> 
+	<div id="page">
+    	<div id="header">
+            <div id="menuTop">
+                <div id="logo">
+                	<h1>
+                		<a title="VENCA" href="/Navigation">Venca Mobile</a>
+                	</h1>
+                </div>
+                
+                <div id="cart">
+                	<a href="/Cart/Index" id="cart_details" class="fullSize"></a>
+                </div>
+                
+                <div id="miCuenta"><a id="botonMiCuentaRosa" class="botonMiCuenta" href="/Users/Login">Mi cuenta</a></div>
+            </div>
+        </div>
+    
+        
+    	<form action="/Users/Insert" method="post" class="content" id="client_data" onsubmit="return validarCamposRequeridos(this)">
+            <fieldset>  
+                <div class="borderField">
+                    <input type="text" class="fieldForm" id="Street" name="Address.Street" value="" maxlength="30" placeholder="Dirección" />
+                </div>
+                <p id="StreetError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <div class="borderField">
+                    <input type="text" class="fieldForm" id="Number" name="Address.Number" value="" maxlength="5" style="width:70px" placeholder="Número" />
+                </div>
+                <p id="NumberError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <label for="AdditionAddress">Complemento direcci&oacute;n (opcional)</label>
+                <input type="text" class="textbox" id="AdditionAddress" name="Address.AdditionAddress" value="" maxlength="10" placeholder="ej: escalera, piso, puerta, ..."/>
+            </fieldset>
+            <fieldset>
+                <label for="PostalCode">C&oacute;digo postal</label>
+                <input type="text" class="textbox"  id="PostalCode" name="Address.PostalCode" maxlength="5" value="" style="width:70px" />  
+                <p id="PostalCodeError" class="red"></p>
+                <p class="requiered-field" ></p>       
+            </fieldset>
+            <fieldset>
+                <label for="City">Poblaci&oacute;n</label>
+                <input type="text" class="textbox" id="City" name="Address.City" maxlength="30" value="" />  
+                <p id="CityError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <label for="Address.Province">Provincia</label>
+                <select Id="Address.Province" class="combo_big" id="Address_Province" name="Address.Province" style="width:272px"><option value="A CORUÑA">A CORU&#209;A</option>
+                    <option value="ALAVA">ALAVA</option>
+                    <option value="ALBACETE">ALBACETE</option>
+                    <option value="ALICANTE">ALICANTE</option>
+                    <option value="ALMERIA">ALMERIA</option>
+                    <option value="ANDORRA">ANDORRA</option>
+                    <option value="ASTURIAS">ASTURIAS</option>
+                    <option value="AVILA">AVILA</option>
+                    <option value="BADAJOZ">BADAJOZ</option>
+                    <option value="BALEARS">BALEARS</option>
+                    <option value="BARCELONA">BARCELONA</option>
+                    <option value="BURGOS">BURGOS</option>
+                    <option value="CACERES">CACERES</option>
+                    <option value="CADIZ">CADIZ</option>
+                    <option value="CANTABRIA">CANTABRIA</option>
+                    <option value="CASTELLON">CASTELLON</option>
+                    <option value="CIUDAD REAL">CIUDAD REAL</option>
+                    <option value="CORDOBA">CORDOBA</option>
+                    <option value="CUENCA">CUENCA</option>
+                    <option value="GIRONA">GIRONA</option>
+                    <option value="GRANADA">GRANADA</option>
+                    <option value="GUADALAJARA">GUADALAJARA</option>
+                    <option value="GUIPUZCOA">GUIPUZCOA</option>
+                    <option value="HUELVA">HUELVA</option>
+                    <option value="HUESCA">HUESCA</option>
+                    <option value="JAEN">JAEN</option>
+                    <option value="LA RIOJA">LA RIOJA</option>
+                    <option value="LAS PALMAS">LAS PALMAS</option>
+                    <option value="LEON">LEON</option>
+                    <option value="LLEIDA">LLEIDA</option>
+                    <option value="LUGO">LUGO</option>
+                    <option value="MADRID">MADRID</option>
+                    <option value="MÁLAGA">M&#193;LAGA</option>
+                    <option value="MELILLA">MELILLA</option>
+                    <option value="MURCIA">MURCIA</option>
+                    <option value="NAVARRA">NAVARRA</option>
+                    <option value="OURENSE">OURENSE</option>
+                    <option value="PALENCIA">PALENCIA</option>
+                    <option value="PONTEVEDRA">PONTEVEDRA</option>
+                    <option value="SALAMANCA">SALAMANCA</option>
+                    <option value="SEGOVIA">SEGOVIA</option>
+                    <option value="SEVILLA">SEVILLA</option>
+                    <option value="SORIA">SORIA</option>
+                    <option value="TARRAGONA">TARRAGONA</option>
+                    <option value="TENERIFE">TENERIFE</option>
+                    <option value="TERUEL">TERUEL</option>
+                    <option value="TOLEDO">TOLEDO</option>
+                    <option value="VALENCIA">VALENCIA</option>
+                    <option value="VALLADOLID">VALLADOLID</option>
+                    <option value="VIZCAYA">VIZCAYA</option>
+                    <option value="ZAMORA">ZAMORA</option>
+                    <option value="ZARAGOZA">ZARAGOZA</option>
+                </select>
+            </fieldset>
+            <fieldset>  
+                <label for="MobilePhone">Tel&eacute;fono m&oacute;vil</label>
+                <input type="tel" class="textbox" id="MobilePhone" name="MobilePhone" value="" maxlength="9" />  
+                <p id="MobilePhoneError" class="red"></p>
+                <p class="small_print">Nos permitir&aacute; ponernos en contacto contigo para cualquier evento relativo al pedido (aviso por SMS, llamada al transportista,...)</p> 
+            </fieldset>
+            <fieldset>
+                <label for="FixedPhone">Tel&eacute;fono fijo (opcional)</label>
+                <input type="tel" class="textbox" id="FixedPhone" name="FixedPhone" maxlength="9" value="" />  
+                <p id="FixedPhoneError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" class="checkbox" id="Authorization" name="Authorization" value="true" />
+                <label for="Authorization">He leído y acepto las <a href="/StaticPages/SaleGeneralConditions">condiciones de venta</a>, la <a href="/StaticPages/LegalAdvice#proteccion">protección de datos </a> y <a href="/StaticPages/LegalAdvice#cookies">política de cookies</a>.</label>
+                <p id="AuthorizationError" class="red"></p>
+            </fieldset>
+            <fieldset>
+                <input id="Email" name="Email" type="hidden" value="prog2@formabinari.com" />
+                <input id="Id" name="Id" type="hidden" value="0" />  
+                <input id="NIFNIE" name="NIFNIE" type="hidden" value="" />  
+                <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" />
+                <input id="IsNew" name="IsNew" type="hidden" value="True" />
+                <input id="tipo" name="tipo" type="hidden" value="alta" />
+            </fieldset>
+            <input class="buttonRosa" name="submit" type="submit" value="SIGUIENTE PASO" />
+    	</form>
+        
+        <div id="tituloServicios">SERVICIOS</div>
+        <div id="servicios">
+            <ul id="serviciosContainer">
+            	<li><a id="pedido"  class="itemServicio" href="/StaticPages/Services">Pedido</a></li>
+                <li><a id="entrega" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Entrega</a></li>
+                <li><a id="pago" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Pago</a></li>
+                <li><a id="venta" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Servicio<br/>post-venta</a></li>
+                <li><a id="preguntas" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Preguntas<br/>frecuentes</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <ul id="info">
+                <li class="itemInfo"><a href="/StaticPages/SaleGeneralConditions">Condiciones de venta</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice">Aviso legal</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice#proteccion">Protección de datos</a></li>
+                <div style="clear:both"></div>
+                <br/>
+                <li class="itemInfo"><a href="/StaticPages/CookiesPolicy">Política de cookies</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/GoToClassicWeb">Ver web clásica</a></li>
+            </ul>
+        </div>
+	</div>
+</body>
+</html>
