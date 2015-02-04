@@ -258,7 +258,7 @@ body {
 
 #shop-window-list li a {
     display: block;
-    width: 140px;
+    /*width: 140px;*/
     text-decoration: none;
     color: #000;
 }
@@ -331,15 +331,19 @@ body {
 	margin-top: 15px;
 }
 
-.combo, .combo_product, .combo_big, .combo_little, .combo_medium, .combo_advantage_model {
-    height: 25px;
+.combo, .combo_product, .combo_big, .combo_little, .combo_medium, .combo_advantage_model, .comboDate, .comboHalf {
+    height: 42px;
     font-size: 14px;
-    border: 1px solid #606060;
-    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+	color:#58585A;
 }
 
 .combo {
     width: 130px;
+}
+
+.comboDate {
+	width: 32.3%;
 }
 
 .combo_product {
@@ -347,7 +351,7 @@ body {
 }
 
 .combo_big {
-    width: 260px;
+    width: 100%;
 }
 
 .combo_little {
@@ -1206,6 +1210,7 @@ img#topoRojo{
 #shop-window-list span.text_price_before {
     font-size: 11px;
     font-weight: normal;
+	color:#58585a;
 }
 
 #shop-window-list span.price_from_3digits {
@@ -1853,7 +1858,7 @@ ELEMENTOS NUEVOS
 	background-repeat:no-repeat;
 	background-size:12px;
 	background-position: right 16px;
-	border-right: 13px solid transparent;	
+	border-right: 15px solid transparent;	
 }
 
 .borderField {
@@ -2051,8 +2056,25 @@ textarea:focus, input:focus{
 	display:inline;
 }
 
-.textRosa {
+.textRosa, .price {
 	color:#de007a;
+}
+
+.textGris {
+	color:#58585a;
+}
+
+.price {
+	float:right;	
+}
+
+.productDescription {
+	height:50px;
+}
+
+.textDiscount {
+	text-decoration:line-through;
+	float: left;
 }
 
 #forgottenPass {
@@ -2061,6 +2083,17 @@ textarea:focus, input:focus{
 
 .buttonRosa {
 	background-color:#de007a;
+	padding: 15px 0px;
+	color:#FFF;
+	text-align:center;
+	width:100%;
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+	border:none;
+}
+
+.buttonGris {
+	background-color:#58585a;
 	padding: 15px 0px;
 	color:#FFF;
 	text-align:center;
@@ -2079,6 +2112,10 @@ textarea:focus, input:focus{
 
 .errorField {
 	border-color:#F00;	
+}
+
+.errorField option:first-child{
+	color:#F00;	
 }
 
 .errorField ::-webkit-input-placeholder { /* WebKit browsers */
@@ -2142,13 +2179,6 @@ textarea:focus, input:focus{
 	background-position-y: -3px;
 }
 
-.comboDate {
-	width: 32.3%;
-	height:42px;
-	border-color: #e0e0e0;
-	color:#58585A;
-}
-
 input[type='radio'] {
 	-webkit-appearance:none;
 	width:25px;
@@ -2177,6 +2207,55 @@ input[type='radio']:checked:before {
 
 #sex label {
 	padding-top:7px;
+}
+
+#numero {
+	width:30%;
+	float:left;	
+}
+
+#piso {
+	width: 65%;
+	float:right;
+}
+
+#labelAuthorization {
+	color:#58585a;
+	text-decoration:underline;
+}
+
+#labelAuthorization a{
+	color:#58585a;
+}
+
+.tel {
+	width: 26%;
+	margin-left:5px;
+	float:left;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+.discount {
+	background-image: url(../Content/img/descuento.svg);
+	background-repeat:no-repeat;
+	background-size: 35px 35px;
+	width:0px;
+	height:0px;
+	position:relative;
+	top: 50px;
+	left: 95px;
+	color:#FFF;
+	text-align:center;
+	font-size: 10px;
 }
 
 /******************* CAMPOS PARA LA CONTRASEÑA CON RALLITA EN EL MEDIO *********************/
@@ -2208,7 +2287,22 @@ input[type='radio']:checked:before {
 
 /***********************************************************/
 
-
+#filter a{
+	width:50%;
+	float:left;
+	text-decoration:none;
+}
+#filter li {
+	background-image: url(../Content/img/flechaItemMenu.svg);
+	background-repeat: no-repeat;
+	background-size: 12px;
+	background-position: right 18px;
+	border: 1px solid #e0e0e0;
+	height:28px;
+	padding-left:15px;
+	color:#000;
+	padding-top:15px;
+}
 
 /* ************************************************************************************************************* */
 /* ICONOS SERVICIO RESPONSIVE*/

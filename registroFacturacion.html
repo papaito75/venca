@@ -32,36 +32,42 @@
     
         
     	<form action="/Users/Insert" method="post" class="content" id="client_data" onsubmit="return validarCamposRequeridos(this)">
+        	<h1 class="headline">DATOS FACTURACIÓN/ENTREGA</h1>
             <fieldset>  
                 <div class="borderField">
                     <input type="text" class="fieldForm" id="Street" name="Address.Street" value="" maxlength="30" placeholder="Dirección" />
                 </div>
                 <p id="StreetError" class="red"></p>
             </fieldset>
-            <fieldset>
+            <fieldset id="numero">
                 <div class="borderField">
                     <input type="text" class="fieldForm" id="Number" name="Address.Number" value="" maxlength="5" style="width:70px" placeholder="Número" />
                 </div>
                 <p id="NumberError" class="red"></p>
             </fieldset>
-            <fieldset>
-                <label for="AdditionAddress">Complemento direcci&oacute;n (opcional)</label>
-                <input type="text" class="textbox" id="AdditionAddress" name="Address.AdditionAddress" value="" maxlength="10" placeholder="ej: escalera, piso, puerta, ..."/>
+            <fieldset id="piso">
+                <div class="borderField">
+                	<input type="text" class="fieldForm" id="AdditionAddress" name="Address.AdditionAddress" value="" maxlength="10" placeholder="Escalera, piso,... (opcional)"/>
+                </div>
             </fieldset>
+            <div style="clear:both"></div>
             <fieldset>
-                <label for="PostalCode">C&oacute;digo postal</label>
-                <input type="text" class="textbox"  id="PostalCode" name="Address.PostalCode" maxlength="5" value="" style="width:70px" />  
+            	<div class="borderField" style="width:50%">
+                	<input type="text" class="fieldForm"  id="PostalCode" name="Address.PostalCode" maxlength="5" value="" placeholder="Código postal" />
+                </div>
                 <p id="PostalCodeError" class="red"></p>
                 <p class="requiered-field" ></p>       
             </fieldset>
             <fieldset>
-                <label for="City">Poblaci&oacute;n</label>
-                <input type="text" class="textbox" id="City" name="Address.City" maxlength="30" value="" />  
+                <div class="borderField">
+                	<input type="text" class="fieldForm" id="City" name="Address.City" maxlength="30" value="" placeholder="Población"/>  
+                </div>
                 <p id="CityError" class="red"></p>
             </fieldset>
             <fieldset>
-                <label for="Address.Province">Provincia</label>
-                <select Id="Address.Province" class="combo_big" id="Address_Province" name="Address.Province" style="width:272px"><option value="A CORUÑA">A CORU&#209;A</option>
+                <select Id="Address.Province" class="combo_big" id="Address_Province" name="Address.Province">
+                	<option value="0">Provincia</option>
+                	<option value="A CORUÑA">A CORU&#209;A</option>
                     <option value="ALAVA">ALAVA</option>
                     <option value="ALBACETE">ALBACETE</option>
                     <option value="ALICANTE">ALICANTE</option>
@@ -115,11 +121,19 @@
                     <option value="ZARAGOZA">ZARAGOZA</option>
                 </select>
             </fieldset>
-            <fieldset>  
-                <label for="MobilePhone">Tel&eacute;fono m&oacute;vil</label>
-                <input type="tel" class="textbox" id="MobilePhone" name="MobilePhone" value="" maxlength="9" />  
+            <div class="borderBottom"></div><br/>
+            <fieldset>
+            	<h1 class="headline">TELÉFONO</h1>
+            	<div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="MobilePhone" name="MobilePhone" value="" maxlength="9" placeholder="Móvil"/>
+                </div>
+                <div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="MobilePhone" name="MobilePhone" value="" maxlength="9" />
+                </div> 
+                <div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="MobilePhone" name="MobilePhone" value="" maxlength="9" />
+                </div> 
                 <p id="MobilePhoneError" class="red"></p>
-                <p class="small_print">Nos permitir&aacute; ponernos en contacto contigo para cualquier evento relativo al pedido (aviso por SMS, llamada al transportista,...)</p> 
             </fieldset>
             <fieldset>
                 <label for="FixedPhone">Tel&eacute;fono fijo (opcional)</label>
@@ -128,18 +142,21 @@
             </fieldset>
             <fieldset>
                 <input type="checkbox" class="checkbox" id="Authorization" name="Authorization" value="true" />
-                <label for="Authorization">He leído y acepto las <a href="/StaticPages/SaleGeneralConditions">condiciones de venta</a>, la <a href="/StaticPages/LegalAdvice#proteccion">protección de datos </a> y <a href="/StaticPages/LegalAdvice#cookies">política de cookies</a>.</label>
+                <label for="Authorization" id="labelAuthorization">He leído y acepto las <a href="/StaticPages/SaleGeneralConditions">condiciones de venta</a>, la <a href="/StaticPages/LegalAdvice#proteccion">protección de datos </a> y <a href="/StaticPages/LegalAdvice#cookies">política de cookies</a>.</label>
                 <p id="AuthorizationError" class="red"></p>
             </fieldset>
             <fieldset>
-                <input id="Email" name="Email" type="hidden" value="prog2@formabinari.com" />
+                <input id="Email" name="Email" type="hidden" value="" />
                 <input id="Id" name="Id" type="hidden" value="0" />  
                 <input id="NIFNIE" name="NIFNIE" type="hidden" value="" />  
                 <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" />
                 <input id="IsNew" name="IsNew" type="hidden" value="True" />
                 <input id="tipo" name="tipo" type="hidden" value="alta" />
             </fieldset>
-            <input class="buttonRosa" name="submit" type="submit" value="SIGUIENTE PASO" />
+            <a class="info" href="#"></a>
+            <div style="clear:both"></div><br/>
+            <input class="buttonRosa" style="float:right; width:47%" name="submit" type="submit" value="VALIDAR" />
+            <input class="buttonGris" style="float:left; width:47%" name="submit" type="submit" value="ATRÁS" />
     	</form>
         
         <div id="tituloServicios">SERVICIOS</div>
