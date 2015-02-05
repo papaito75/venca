@@ -1140,7 +1140,11 @@ table.opening-hours tbody tr td:first-child, table.opening-hours tbody tr:first-
 }
 
 .more_products {
-    margin: 0 0 45px 0;
+    margin: 30px 15px 0 15px;
+}
+
+.more_products a {
+	text-decoration:none;	
 }
 
 /******************************PROMOTION SET***************************************/
@@ -2021,7 +2025,6 @@ ELEMENTOS NUEVOS
 
 .menuRosa a{
 	color:#DE007A;
-	background-image:none !important;
 }
 
 #cesta {
@@ -2248,14 +2251,15 @@ input[type=checkbox]
 	background-image: url(../Content/img/descuento.svg);
 	background-repeat:no-repeat;
 	background-size: 35px 35px;
-	width:0px;
-	height:0px;
-	position:relative;
-	top: 50px;
+	width:35px;
+	height:35px;
+	position:absolute;
+	top: 20px;
 	left: 95px;
 	color:#FFF;
 	text-align:center;
 	font-size: 10px;
+	padding-top: 3px;
 }
 
 /******************* CAMPOS PARA LA CONTRASEÑA CON RALLITA EN EL MEDIO *********************/
@@ -2359,5 +2363,32 @@ input[type=checkbox]
 	#preguntas {
 		margin-top:15px;
 		margin-left:74px;
+	}
+}
+
+
+
+/***************************************************************************************/
+/* ESCAPARATE RESPONSIVE */
+/******************************************************************************************/
+
+@media only screen and (min-width: 616px) {
+	#shop-window-list {
+		width:616px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 332px) and (max-width: 615px) {
+	#shop-window-list {
+		width:300px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 331px) {
+	#shop-window-list {
+		width:150px;
+		margin: 0 auto;
 	}
 }
