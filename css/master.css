@@ -118,7 +118,8 @@ body {
 }
 
 #searcher {
-    margin: 10px;
+    padding: 15px;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 .fieldForm {
@@ -2448,6 +2449,37 @@ input[type='radio']:checked:before {
 .menuSearch li:first-child  {
 	border-bottom: 1px solid #e0e0e0;
 	text-transform: uppercase;
+}
+
+.subSection li {
+	border-bottom:none;
+}
+
+.subSection li a{
+	color: #58585a;
+	text-transform:none;
+	background-color:#f0f0f0;
+	border-right: 30px solid transparent;
+	padding-left:30px;
+	border-bottom: 1px solid #FFF;
+}
+
+.subSubSection li a{
+	color: #58585a;
+	text-transform:none;
+	background-color:#e0e0e0;
+	border-right: 45px solid transparent;
+	padding-left:45px;
+	border-bottom: none;
+	background-image:none;
+}
+
+.noBackgroundImage {
+	background-image:none !important;
+}
+
+.menuDesplegado {
+	background-image: url(../Content/img/flechaItemMenu180GrisOscuro.svg) !important;
 }
 
 /* ************************************************************************************************************* */
