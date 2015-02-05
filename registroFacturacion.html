@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/master.css"/>
 
-<title>Venca</title>
+<title>Venca registro facturación</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
         </div>
     
         
-    	<form action="/Users/Insert" method="post" class="content" id="client_data" onsubmit="return validarCamposRequeridos(this)">
+    	<form action="/Users/Insert" method="post" class="content fondoGrisClaro" id="client_data" onsubmit="return validarCamposRequeridos(this)">
         	<h1 class="headline">DATOS FACTURACIÓN/ENTREGA</h1>
             <fieldset>  
                 <div class="borderField">
@@ -140,9 +140,9 @@
                 <input type="tel" class="textbox" id="FixedPhone" name="FixedPhone" maxlength="9" value="" />  
                 <p id="FixedPhoneError" class="red"></p>
             </fieldset>
-            <fieldset>
+            <fieldset id="authorizationField">
                 <input type="checkbox" class="checkbox" id="Authorization" name="Authorization" value="true" />
-                <label for="Authorization" id="labelAuthorization">He leído y acepto las <a href="/StaticPages/SaleGeneralConditions">condiciones de venta</a>, la <a href="/StaticPages/LegalAdvice#proteccion">protección de datos </a> y <a href="/StaticPages/LegalAdvice#cookies">política de cookies</a>.</label>
+                <label for="Authorization" id="labelAuthorization" class="errorAuthorization">He leído y acepto las <a href="/StaticPages/SaleGeneralConditions">condiciones de venta</a>, la <a href="/StaticPages/LegalAdvice#proteccion">protección de datos </a> y <a href="/StaticPages/LegalAdvice#cookies">política de cookies</a>.</label>
                 <p id="AuthorizationError" class="red"></p>
             </fieldset>
             <fieldset>

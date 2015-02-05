@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+<title>Venca filtrar desplegado</title>
+</head>
+
+<body>
+ 
+    <a name="inicio"></a> 
+    <div id="page">
+    
+        <div id="header">
+            <div id="menuTop">
+                <div id="logo">
+                	<h1>
+                		<a title="VENCA" href="/Navigation">Venca Mobile</a>
+                	</h1>
+                </div>
+                
+                <div id="cartNumero">
+                	<a href="/Cart/Index" id="cart_details" class="fullSize">
+                    	<div id="cesta">2</div>
+                    </a>
+                </div>
+                <div id="miCuenta"><a id="botonMiCuenta" class="botonMiCuenta" href="/Users/Login">Maria Cristina</a></div>
+                
+            </div>
+        </div>
+        <div class="content">
+        	<h1>Camisetas y tops <font class="textGris">(481 Artículos)</font></h1>
+        </div>
+        <ul id="filter" class="activeFilter">
+            <li><a href="#">FILTRAR</a></li>
+        </ul>
+        
+        <div class="content">
+        	<form>
+              <ul class="menuFilter">
+                    <li id="talla" class="menuFilterDesplegado">
+                    	<a href="#">Talla</a>
+                        <input id="XS" type="checkbox" value="XS"><label for="XS">XS</label>
+                        <input id="S" type="checkbox" value="S"><label for="S">S</label>
+                        <input id="M" type="checkbox" value="M"><label for="M">M</label>
+                        <input id="L" type="checkbox" value="L"><label for="L">L</label>
+                       
+                    </li>
+                    <div style="clear:both"></div>
+                    <li id="color" class="menuFilterDesplegado">
+                    	<a href="#">Color</a>
+                    	<input id="Negro" type="checkbox" value="Negro"><label id="negro" for="Negro">Negro</label>
+                        <input id="Azul" type="checkbox" value="Azul"><label for="Azul">Azul</label>
+                        <input id="Blanco" type="checkbox" value="Blanco"><label for="Blanco">Blanco</label>
+                        <input id="Gris" type="checkbox" value="Gris"><label for="Gris">Gris</label>
+                    </li>
+                    <div style="clear:both"></div>
+                    <li id="marcas" class="menuFilterDesplegado">
+                    	<a href="#">Marcas</a>
+                        <input id="3 Suisses Collection" type="checkbox" value="3 Suisses Collection"><label for="3 Suisses Collection">3 Suisses Collection</label><br/>
+                        <input id="Venca" type="checkbox" value="Venca"><label for="Venca">Venca</label><br/>
+                        <input id="Votre mode" type="checkbox" value="Votre mode"><label for="Votre mode">Votre mode</label><br/>
+                    </li>
+                </ul>
+                <div id="filterBR">
+                    <input class="buttonRosa" style="float:right; width:47%" name="submit" type="submit" value="APLICAR" />
+                    <input class="buttonGris" style="float:left; width:47%" name="submit" type="submit" value="BORRAR TODOS" />
+              </div>
+        	</form>
+        </div>
+        
+	</div>
+</body>
+</html>
+
