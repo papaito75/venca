@@ -2516,6 +2516,33 @@ input[type='radio']:checked:before {
 .more_info #shop-window-list span{
 	background-color:#FFF;
 }
+
+#foto img {
+	width:100%;
+}
+
+#foto {
+	width:300px;
+	position:relative;
+}
+
+#foto #buttonCerrar {
+	position:absolute;
+	padding:10px 15px 10px 5px;
+	color:#58585a;
+	background-color:#FFF;
+	right:15px;
+	top:15px;
+	background-image:url(../Content/img/cruz.svg);
+	background-repeat:no-repeat;
+	background-size:10px;
+	background-position:right;
+	border-right: 5px solid transparent;
+}
+
+#foto #buttonCerrar a{
+	color:#58585a;
+}
 /* ************************************************************************************************************* */
 /* ICONOS SERVICIO RESPONSIVE*/
 /* ************************************************************************************************************* */
