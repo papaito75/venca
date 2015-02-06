@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+<title>Venca descripción</title>
+</head>
+
+<body>
+ 
+    <a name="inicio"></a> 
+    <div id="page">
+    
+        <div id="header">
+            <div id="menuTop">
+                <!--<div id="botonMenu"></div>-->
+                
+                <div id="logo">
+                	<h1>
+                		<a title="VENCA" href="/Navigation">Venca Mobile</a>
+                	</h1>
+                </div>
+                
+                <div id="cartNumero">
+                	<a href="/Cart/Index" id="cart_details" class="fullSize">
+                    	<div id="cesta">2</div>
+                    </a>
+                </div>
+                <div id="miCuenta"><a id="botonMiCuentaRosa" class="botonMiCuenta" href="/Users/Login">Maria Cristina</a></div>
+                
+            </div>
+        </div>
+        <form id="product_file" action="/Products/Insert" method="post" onsubmit="return validateInsert(this)">
+
+            <fieldset>
+                <p>Vestido mujer manga 3/4 estampado punto</p>
+                <span id="price1">9,99 €</span>
+            </fieldset>
+            <fieldset>
+                <img alt="" id="image" src="http://www.venca.es/img/imgProdan/140149an037560.jpg">
+            </fieldset>	
+            <fieldset id="carousel">
+				<a href="#" title="Mostrar imagen"><img alt="imagen" src="http://www.venca.es/img/imgProdbn/140149bn.jpg" onclick=" javascript:changeImage('http://www.venca.es/img/imgProdbn/140149bn.jpg')"></a>
+                
+                <a href="#" title="Mostrar imagen"><img alt="" id="image2" src="http://www.venca.es/img/imgProdan/140149an037560.jpg" onclick=" javascript:changeImage(this.src); "></a>
+            </fieldset>   
+            <fieldset>
+                <p>Vestido mujer manga 3/4 estampado punto</p>
+                <span id="price2">9,99 €</span>
+            </fieldset>
+            <fieldset>
+        		<input id="modelcode" name="modelcode" type="hidden" value="140149"><input id="navigationkey" name="navigationkey" type="hidden" value="W1301"
+                	<fieldset>
+                		<label>Elige un color:</label>
+                		<select id="colors" class="combo_big" name="colors"><option value="37560">CRUDO</option>
+                    	<option value="37576">ARCILLA</option>
+                    	<option value="37585">MOSTAZA</option>
+                    </select>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Elige tu talla:</label>
+                <select id="sizesList" class="combo_big" name="sizesList">
+                	<option selected="selected" value="S      ">S       - Disponible</option>
+                    <option value="M      ">M       - Disponible</option>
+                    <option value="L      ">L       - Disponible</option>
+                    <option value="XL     ">XL      - Disponible</option>
+                    <option value="XXL    ">XXL     - Disponible</option>
+                    <option value="3XL    ">3XL     - Disponible</option>
+        		</select>
+            </fieldset>
+            <fieldset>
+                <label for="Cantidad:">Cantidad:</label>
+                <select id="quantity" class="combo_little" name="Quantity"><option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+        		</select>
+            </fieldset>
+            <fieldset>
+                    <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+                    <span class="topoRojoText">Este artículo tiene un precio tan ajustado que no admite descuentos adicionales.</span> <br>
+            </fieldset>
+        
+            <p id="NotAvailableError" class="red"></p>
+            <br>
+            <input type="hidden" name="ItemOfSaleKey.idItem" id="idItem" value="37560">
+            <input type="hidden" id="color" name="color" value="CRUDO">
+            <input type="hidden" id="Size" name="ItemOfSaleKey.Size" value="S  ">
+            <input type="hidden" id="FullSize" name="FullSize" value="S      ">
+            <input type="hidden" name="ItemOfSaleKey.Canal" value="1">
+            <input type="hidden" name="ItemOfSaleKey.IdCatalog" value="IX">
+            <input type="hidden" id="SalePrice" name="SalePrice" value="9,99">
+            <input type="hidden" name="VolumeType" value="A">
+            <input type="hidden" id="IsAvailable" name="IsAvailable" value="True">
+            <input type="hidden" name="Family" value="140">    
+            <input type="hidden" name="Model" value="149">        
+            <input type="hidden" name="ModelCode" value="140149">    
+            <input type="hidden" name="Description" id="description" value="VESTIDO CRUDO                 ">    
+            <input type="hidden" id="photo" name="photo" value="http://www.venca.es/img/imgProdan/140149an037560.jpg">
+            <input type="hidden" name="NavigationKey" value="W1301">
+            <input type="hidden" name="DescriptionWeb" value="Vestido mujer manga 3/4 estampado punto">
+            <input type="hidden" name="AcceptsTradeDiscounts" value="False">
+            <input type="submit" class="buttonRosa" value="Añadir a mi cesta">
+        </form>
+        <ul class="more_info fondoGrisClaro">
+            <li class="menu_slidedown">Descripción ampliada</li>
+            <li class="content slidedown" style="display: none;">
+           		<p>Te encantará seguir la tendencia con este sensacional vestido. Vestido de amplio escote redondeado y práctica manga 3/4. Espectacular diseño estampado en el delantero con motivos clásicos y de inspiración étnica en una acertada mezcla de estilos que te cautivará. Vestido confeccionado en punto liso elástico 95% poliéster, 5% elastán. Largo aprox 85 cm.</p>
+            </li>
+            <li class="menu_slidedown menuDesplegado">Nuestras sugerencias</li>
+            <li class="content slidedown">
+                <ul id="shop-window-list" class="fondoGrisClaro">
+                <li style="position:relative">
+                    <div class="discount">hasta -25%</div>
+                    <a href="/Products/Detail/?ModelCode=140149&amp;NavigationKey=W1301"><img src="http://www.venca.es/img/imgProdam/140149am.jpg" /></a>
+                    <div class="productDescription">
+                        <font class="textGris">Venca</font>
+                        <a href="/Products/Detail/?ModelCode=140149&amp;NavigationKey=W1301">Vestido mujer manga 3/4 estampado punto</a>
+                        
+                    </div>
+                    <span class="text_price_before textDiscount">desde 9.99</span>
+                    <a href="/Products/Detail/?ModelCode=140149&amp;NavigationKey=W1301"><span class="price">7,50 &euro;</span></a>
+                </li>
+                <li>
+                    <a href="/Products/Detail/?ModelCode=100393&amp;NavigationKey=W1301"><img src="http://www.venca.es/img/imgProdam/100393am.jpg" /></a>
+                    <div class="productDescription">
+                        <a href="/Products/Detail/?ModelCode=100393&amp;NavigationKey=W1301">Blusa larga mujer con jaretas</a>
+                    </div>
+                    <a href="/Products/Detail/?ModelCode=100393&amp;NavigationKey=W1301" class="price"><span class="text_price_before">desde</span> <span class="textRosa">9,99 &euro;</span></a>
+                    
+                </li>
+                </ul>
+            </li>
+        </ul>
+        <div id="tituloServicios">SERVICIOS</div>
+        <div id="servicios">
+            <!--<div id="serviciosContainer">-->
+            <ul id="serviciosContainer">
+            	<li><a id="pedido"  class="itemServicio" href="/StaticPages/Services">Pedido</a></li>
+                <li><a id="entrega" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Entrega</a></li>
+                <li><a id="pago" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Pago</a></li>
+                <li><a id="venta" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Servicio<br/>post-venta</a></li>
+                <li><a id="preguntas" class="itemServicio itemServicioPadding" href="/StaticPages/Services">Preguntas<br/>frecuentes</a></li>
+            </ul>
+            <!--</div>-->
+        </div>
+        <div id="footer">
+            <ul id="info">
+                <li class="itemInfo"><a href="/StaticPages/SaleGeneralConditions">Condiciones de venta</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice">Aviso legal</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/LegalAdvice#proteccion">Protección de datos</a></li>
+                <div style="clear:both"></div>
+                <br/>
+                <li class="itemInfo"><a href="/StaticPages/CookiesPolicy">Política de cookies</a></li> | 
+                <li class="itemInfo"><a href="/StaticPages/GoToClassicWeb">Ver web clásica</a></li>
+            </ul>
+        </div>
+    
+    </div>
+    
+    
+
+</body>
+</html>
+

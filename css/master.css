@@ -247,10 +247,11 @@ body {
 
 #shop-window-list li {
     width: 140px;
-    display: inline;
-    padding: 10px 10px 10px 0;
-    float: left;
-    height: 250px;
+	display: inline;
+	margin: 10px 10px 10px 0;
+	float: left;
+	height: 260px;
+	background-color:#FFF
 }
 
 #shop-window-list img {
@@ -338,6 +339,14 @@ body {
     font-size: 14px;
     border: 1px solid #e0e0e0;
 	color:#58585A;
+}
+
+#product_file select{
+	height: 25px;
+	font-size: 14px;
+	border: 1px solid #606060;
+	border-radius: 5px;
+	color:#000;
 }
 
 .combo {
@@ -826,12 +835,14 @@ body {
 
 .menu_slidedown {
     clear: left;
-    background-color: #e9e9e9;
+    background-color: #f0f0f0;
     padding: 13px 0 13px 15px;
     border-top: 1px solid #909090;
-    background-image: url("../Content/img/more.png");
+    background-image: url("../Content/img/flechaItemMenu.svg");
     background-position: right center;
     background-repeat: no-repeat;
+	background-size:12px;
+	border-right: 15px solid transparent;	
 }
 
 .menu_slidedown_less {
@@ -845,7 +856,7 @@ body {
 }
 
 .more_info li:last-child {
-    border-bottom: 1px solid #909090;
+    border-bottom: 1px solid #FFF;
 }
 
 .steps {
@@ -1198,7 +1209,8 @@ table.opening-hours tbody tr td:first-child, table.opening-hours tbody tr:first-
 
 img#topoRojo{
     float: left;
-    width: 25px !important;
+    width: 20px !important;
+	padding-right: 4px;
 }
 
 #product_file span.topoRojoText, #mycart span.topoRojoText {
@@ -2109,8 +2121,9 @@ textarea:focus, input:focus{
 	text-align:center;
 	width:100%;
 	font-size: 14px;
-	font-family: Helvetica, sans-serif;
+	/*font-family: Helvetica, sans-serif;*/
 	border:none;
+	text-transform: uppercase;
 }
 
 .buttonGris {
@@ -2482,6 +2495,27 @@ input[type='radio']:checked:before {
 	background-image: url(../Content/img/flechaItemMenu180GrisOscuro.svg) !important;
 }
 
+.more_info #shop-window-list {
+	height: 280px;
+	width:inherit;
+}
+
+.more_info #shop-window-list {
+	height: 280px;
+	width:inherit;
+}
+
+.more_info #shop-window-list li{
+	border-bottom:none;
+}
+
+.more_info #shop-window-list .productDescription{
+	background-color:#FFF;
+}
+
+.more_info #shop-window-list span{
+	background-color:#FFF;
+}
 /* ************************************************************************************************************* */
 /* ICONOS SERVICIO RESPONSIVE*/
 /* ************************************************************************************************************* */
