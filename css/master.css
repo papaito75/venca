@@ -246,16 +246,16 @@ body {
 }
 
 #shop-window-list li {
-    width: 140px;
+    width: 135px;
 	display: inline;
-	margin: 10px 10px 10px 0;
+	margin: 10px 5px 10px 5px;
 	float: left;
 	height: 260px;
 	background-color:#FFF
 }
 
 #shop-window-list img {
-    width: 140px;
+    width: 135px;
     margin-bottom: 5px;
 }
 
@@ -311,7 +311,7 @@ body {
 }
 
 #product_file img {
-    width: 300px;
+    width: 290px;
 }
 
 #carousel {
@@ -350,7 +350,7 @@ body {
 }
 
 .combo {
-    width: 130px;
+    width: 100%;
 }
 
 .comboDate {
@@ -436,8 +436,8 @@ body {
 
 .login, .myaccount, #geotrust, #myorder, #timeToExpire {
     background-color: #fff;
-    /*width: 260px;*/
-    margin-bottom: 15px;
+    /*width: 260px;
+    margin-bottom: 15px;*/
     padding: 15px;
     border-radius: 5px;
 }
@@ -498,10 +498,11 @@ body {
 
 .textbox, .mini_textbox, .little_textbox, .medium_textbox {
     font-size: 18px;
-    height: 22px;
-    color: #000;
+    height: 45px;
+	border: none;
+	/*color: #000;
     border: 1px solid #606060;
-    border-radius: 5px;
+    border-radius: 5px;*/
 }
 .textbox:focus, .mini_textbox:focus, .little_textbox:focus, .medium_textbox:focus,
 .combo:focus, .combo_product:focus, .combo_big:focus, .combo_little:focus, .combo_medium:focus, 
@@ -539,7 +540,7 @@ body {
 }
 
 .little_textbox {
-    width: 100px;
+    width: 200px;
     display: block;
 }
 
@@ -572,10 +573,11 @@ body {
 }
 
 .link {
-    color: #000;
+    color: #58585a;
     font-size: 11px;
-    margin: 0 0 15px 0;
+    margin: 0 10px 15px 0;
     text-decoration: underline;
+	float:left;
 }
 
 .block {
@@ -627,10 +629,11 @@ body {
 
 
 #mycart div {
-	width: 260px;
-    clear: left;
+	width: 285px;
     padding: 15px;
     background-color: #fff;
+	height: 100px;
+	float:left;
     
 }
 
@@ -639,17 +642,25 @@ body {
 	float: left;
     margin: 0 10px 10px 0;
     width: 65px;
+	height: 106px;
 }
 
 .advantage-image img {
     width: 65px;
 }
 
-#mycart div ul, #advantage div ul {
+#advantage div ul {
     display: block;
     float: left;
     margin: 0 15px 0 0;
-    width: 110px;
+    width: 190px;
+}
+
+#mycart div ul {
+    float: left;
+    width: 210px;
+	padding-bottom: 15px;
+	color:#58585a;
 }
 
 #advantage li {
@@ -682,10 +693,15 @@ body {
     line-height: 12px;
 }
 
-#mycart div li:first-child, #advantage div li:first-child, .advantage-discount p {
+#advantage div li:first-child, .advantage-discount p {
     font-weight: bold;
     line-height: 12px;
-    padding-bottom: 5px;
+    
+}
+
+#mycart div li:first-child {
+	padding-bottom: 15px;
+	color: #000;
 }
 
 #advantage div li:first-child {
@@ -698,8 +714,6 @@ body {
 }
 
 #mycart div:first-child {
-    border-radius: 5px 5px 0 0;
-    margin: 10px 0 0 0;
 }
 
 #mycart h3, #advantage h3 {
@@ -715,8 +729,9 @@ body {
 }
 
 #mycart h3{
-	width: 60px;
-    height: 99px;
+	padding-top: 1px;
+	font-size: 14px;
+	float:right;
 }
 
 .advantage-discount h2 {
@@ -748,9 +763,10 @@ body {
 }
 
 .myaccount li p, #myorder p {
-    text-align: right;
+    /*text-align: right;*/
     float: left;
-    width: 129px;
+    /*width: 129px;*/
+	font-size: 14px;
 }
 
 #orderSummary 
@@ -760,8 +776,8 @@ body {
 
 #myorder fieldset {
     float: left;
-    margin: 8px 0px 8px 0px;
-    width: 129px;
+    margin: 15px 0px;
+    width: 100%;
     height: 40px;
 }
 
@@ -779,9 +795,9 @@ body {
 
 #myorder label {
     width: 270px;
-    color: #e2007a;
-    font-weight: bold;
+    color: #58585a;
     padding: 0 0 8px 0;
+	font-size: 12px;
 }
 
 .advantage-headline {
@@ -1153,11 +1169,12 @@ table.opening-hours tbody tr td:first-child, table.opening-hours tbody tr:first-
 }
 
 .more_products {
-    margin: 30px 15px 0 15px;
+    margin: 30px 15px;
 }
 
 .more_products a {
-	text-decoration:none;	
+	text-decoration:none;
+	padding: 15px;
 }
 
 /******************************PROMOTION SET***************************************/
@@ -1210,7 +1227,8 @@ table.opening-hours tbody tr td:first-child, table.opening-hours tbody tr:first-
 img#topoRojo{
     float: left;
     width: 20px !important;
-	padding-right: 4px;
+	height: 20px !important;
+	margin: 0px !important;
 }
 
 #product_file span.topoRojoText, #mycart span.topoRojoText {
@@ -2220,6 +2238,7 @@ input[type='radio'] {
 	border:1px solid #e0e0e0;
 	border-radius:50%;
 	outline:none;
+	background-color: #FFF;
 }
 
 input[type='radio']:before {
@@ -2266,6 +2285,9 @@ input[type='radio']:checked:before {
 	width: 26%;
 	margin-left:5px;
 	float:left;
+	width: -moz-calc(50% - 19px);
+	width: -webkit-calc(50% - 19px);
+	width: calc(33% - 19px);
 }
 
 #authorizationField input[type=checkbox] {
@@ -2412,23 +2434,36 @@ input[type='radio']:checked:before {
 
 /***********************************************************/
 
+#filter {
+	height:45px;
+}
+
 #filter a{
 	width:50%;
 	float:left;
 	text-decoration:none;
 	color:#000;
 }
+
 #filter li {
 	background-image: url(../Content/img/flechaItemMenu.svg);
 	background-repeat: no-repeat;
 	background-size: 12px;
-	background-position: right 18px;
+	background-position: calc(100% - 10px) 18px;
+	
 	border: 1px solid #e0e0e0;
 	height:28px;
 	padding-left:15px;
 	color:#000;
 	padding-top:15px;
+	float:left;
+	width: -moz-calc(50% - 17px);
+	width: -webkit-calc(50% - 17px);
+	width: calc(50% - 17px);
+	background-color: white;
 }
+
+
 
 .activeFilter li {
 	background-image: url(../Content/img/flechaItemMenu180.svg) !important;
@@ -2436,6 +2471,7 @@ input[type='radio']:checked:before {
 
 #filterBR {
 	margin-top:40px;
+	height: 50px;
 }
 
 .degradateButton {
@@ -2543,6 +2579,122 @@ input[type='radio']:checked:before {
 #foto #buttonCerrar a{
 	color:#58585a;
 }
+
+.topoRojoText {
+	padding-left:5px;
+	color:#58585a;
+}
+
+.centerDiv {
+	/*width:300px;*/
+	margin:auto;	
+}
+
+.timeFormat {
+	width: 23px;
+	height: 23px;
+	float:left;
+	
+}
+
+.timeFormat li:first-child {
+	background-color:#58585a;
+	color:#FFF;
+	padding: 4px 0;
+	margin: 2px;
+	text-align: center;
+}
+
+#gift ul li {
+	background-color:#e0e0e0;
+	border-bottom:#FFF solid 1px;
+	padding: 15px 15px 15px 15px;
+	position:relative;
+}
+
+#gift label {
+	position:absolute;
+	top:22px;
+}
+
+#promotion {
+	padding: 10px 0 0 30px;
+}
+
+#promotion .buttonRosa {
+	width: 50px;
+	float: right;	
+}
+
+#gifts li{
+	width:105px;
+	float:left;
+	background-color:#FFF !important;
+	padding:5px !important;
+	margin:10px;
+}
+
+#gifts img{
+	width:105px;
+}
+
+#gifts .productDescription a{
+	color:#000;
+	text-decoration:none;
+	font-size: 10px;
+}
+
+#gifts .price span{
+	color:#de007a;
+	text-decoration:none !important;
+}
+
+#gifts input[type='radio'] {
+	margin-left:40px;
+}
+
+#timeToExpire p {
+	font-size:10px;
+	float:left;
+	padding: 4px 4px 0 0;
+	
+}
+
+#totalPrice {
+	padding-top:20px;
+	clear: both;
+}
+
+#totalPrice p {
+	color:#de007a;
+}
+
+#totalAmmount {
+	font-weight:bold;
+	float: right !important;
+
+}
+
+#numArticulos span {
+	color:#de007a;
+	font-size:14px;
+	float:right;
+}
+
+#num {
+	font-size:11px !important;
+	float:left !important;
+}
+
+#gift .talla {
+	width:50%;
+	float:left;
+}
+
+.regalo img{
+	width:100px;
+}
+
 /* ************************************************************************************************************* */
 /* ICONOS SERVICIO RESPONSIVE*/
 /* ************************************************************************************************************* */
@@ -2609,21 +2761,47 @@ input[type='radio']:checked:before {
 
 @media only screen and (min-width: 616px) {
 	#shop-window-list {
-		width:616px;
+		width:600px;
 		margin: 0 auto;
 	}
 }
 
-@media only screen and (min-width: 332px) and (max-width: 615px) {
+@media only screen and (min-width: 300px) and (max-width: 615px) {
 	#shop-window-list {
 		width:300px;
 		margin: 0 auto;
 	}
 }
 
-@media only screen and (max-width: 331px) {
+@media only screen and (max-width: 300px) {
 	#shop-window-list {
 		width:150px;
+		margin: 0 auto;
+	}
+}
+
+
+/***************************************************************************************/
+/* CESTA RESPONSIVE */
+/******************************************************************************************/
+
+@media only screen and (min-width: 646px) and (max-width: 962px){
+	#mycart {
+		width: 630px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 962px) {
+	#mycart {
+		width: 945px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 646px) {
+	#mycart {
+		width:315px;
 		margin: 0 auto;
 	}
 }

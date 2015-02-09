@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+<title>Venca cesta</title>
+</head>
+
+<body>
+ 
+    <a name="inicio"></a> 
+    <div id="page">
+    
+        <div id="header">
+            <div id="menuTop">
+                <div id="logo">
+                	<h1>
+                		<a title="VENCA" href="/Navigation">Venca Mobile</a>
+                	</h1>
+                </div>
+                
+                <div id="cartNumero">
+                	<a href="/Cart/Index" id="cart_details" class="fullSize">
+                    	<div id="cesta">2</div>
+                    </a>
+                </div>
+                <div id="miCuenta"><a id="botonMiCuenta" class="botonMiCuenta" href="/Users/Login">Maria Cristina</a></div>
+                
+            </div>
+        </div>
+        
+		<div id="numArticulos" class="content">
+			<span id="num">3 artículos</span>
+            <span>103.98 €</span>        
+        </div>
+        
+        
+        <div id="mycart">
+            <div>
+                <img src="http://www.venca.es/img/imgProdan/140149an037560.jpg" alt="" title="Vestido mujer manga 3/4 estampado punto">
+                <ul>
+                    <li>Vestido mujer manga 3/4 estampado punto</li>
+                    <li>Talla: S      </li>
+                    <li style="float:left">Color: CRUDO</li>
+                    <li style="float:right">Cantidad: 10</li>
+                </ul>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Eliminar</a> </p>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Modificar</a> </p>
+                <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+                <h3>309,99&nbsp;€</h3>
+            </div>
+            <div>
+                <img src="http://www.venca.es/img/imgProdan/112098an001762.jpg" alt="" title="Camiseta mujer manga 3/4 estampada">
+                <ul>
+                    <li>Vestido mujer manga 3/4 estampado punto</li>
+                    <li>Talla: S      </li>
+                    <li style="float:left">Color: CRUDO</li>
+                    <li style="float:right">Cantidad: 1</li>
+                </ul>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Eliminar</a> </p>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Modificar</a> </p>
+                <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+                <h3>9,99&nbsp;€</h3>
+            </div>
+            <div>
+                <img src="http://www.venca.es/img/imgProdan/252003an305340.jpg" alt="" title="Jeans skinny mujer LEVI S">
+                <ul>
+                    <li>Vestido mujer manga 3/4 estampado punto</li>
+                    <li>Talla: S      </li>
+                    <li style="float:left">Color: CRUDO</li>
+                    <li style="float:right">Cantidad: 1</li>
+                </ul>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Eliminar</a> </p>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Modificar</a> </p>
+                <h3>89,99&nbsp;€</h3>
+            </div>
+            <div>
+                <img src="http://www.venca.es/img/imgProdan/111516an039244.jpg" alt="" title="Camiseta mujer manga corta estampada">
+                <ul>
+                    <li>Vestido mujer manga 3/4 estampado punto</li>
+                    <li>Talla: S      </li>
+                    <li style="float:left">Color: CRUDO</li>
+                    <li style="float:right">Cantidad: 1</li>
+                </ul>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Eliminar</a> </p>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Modificar</a> </p>
+                <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+                <h3>9,99&nbsp;€</h3>
+            </div>
+            <div>
+                <img src="http://www.venca.es/img/imgProdan/259042an238065.jpg" alt="" title="Camiseta de tirantes REEBOK mujer">
+                <ul>
+                    <li>Vestido mujer manga 3/4 estampado punto</li>
+                    <li>Talla: S      </li>
+                    <li style="float:left">Color: CRUDO</li>
+                    <li style="float:right">Cantidad: 1</li>
+                </ul>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Eliminar</a> </p>
+                <p><a class="link" href="/Cart/RemoveDetail/1">Modificar</a> </p>
+                <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+                <h3>9,99&nbsp;€</h3>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+		
+        <div class="content centerDiv">
+            <img id="topoRojo" src="Content/img/topoRojo.svg" alt="">
+            <span class="topoRojoText">Este artículo tiene un precio tan ajustado que no admite descuentos adicionales.</span>
+        </div>
+        <form method="post" class="centerDiv" action="/Cart/ValidatePromotion">
+        	<fieldset id="gift">
+            <ul>
+                <li><input class="radio" type="radio" name="codigo" id="noRegalo" value="" checked=""><label>No quiero regalo</label></li>
+                <li>
+                	<fieldset>
+                        <input class="radio" type="radio" name="codigo" id="codigo" value=""><label>Tengo un código ventaja</label>
+                        <div id="promotion">
+                            <input class="little_textbox float_left" id="PromotionAdvantageCode" maxlength="5" name="PromotionAdvantageCode" type="text" value="">
+                            <input class="buttonRosa" id="ApplyPromotionAdvantage" name="ApplyPromotionAdvantage" type="submit" value="OK">
+                        </div>
+                        <div style="clear:both"></div>
+                        <input type="hidden" id="DeliveryCodeSelected" name="DeliveryCode" value="P">
+                        <input type="hidden" id="PaymentCodeSelected" name="PaymentCode" value="T">
+                    </fieldset>
+                </li>
+                <li>
+                	<input class="radio" type="radio" name="codigo" id="elegir" value=""><label>Elegir un regalo</label>
+                    <ul class="regalo">
+                    	<li>
+                            <img src="http://www.venca.es/img/imgProdan/252003an305340.jpg" alt="" title="Jeans skinny mujer LEVI S">
+                            
+                            <input id="modelcode" name="modelcode" type="hidden" value="140149">
+                            <input id="navigationkey" name="navigationkey" type="hidden" value="W1301" />
+                            <fieldset class="talla">
+                                <select id="colors" class="combo_big" name="colors"><option value="37560">CRUDO</option>
+                                    <option value="37576">ARCILLA</option>
+                                    <option value="37585">MOSTAZA</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="talla">
+                                <select id="sizesList" class="combo_big" name="sizesList">
+                                    <option selected="selected" value="S      ">S       - Disponible</option>
+                                    <option value="M      ">M       - Disponible</option>
+                                    <option value="L      ">L       - Disponible</option>
+                                    <option value="XL     ">XL      - Disponible</option>
+                                    <option value="XXL    ">XXL     - Disponible</option>
+                                    <option value="3XL    ">3XL     - Disponible</option>
+                                </select>
+                            </fieldset>
+                        </li>
+                    </ul>
+                    <div style="clear:both"></div>
+                </li>
+            </ul>
+            </fieldset>
+        </form>
+        <div id="orderSummary" class="centerDiv">
+            <form method="post" action="/Cart/DoOrder" id="order-form">
+                <div id="myorder">
+                    <p>Subtotal</p>
+                    <p class="halfbold" style="float:right">133,97&nbsp;€</p> 
+                    <fieldset>
+                        <label for="forma de entrega">Forma de entrega</label>
+                        <select id="DeliveryList" class="combo" name="DeliveryCode">
+                        	<option selected="selected" value="P">Punto Pack +<p id="deliveryExpenses">2,95&nbsp;€</p></option>
+                            <option value="3">Servicio urgente +<p id="deliveryExpenses">2,95&nbsp;€</p></option>
+                            <option value="1">Correos domicilio +<p id="deliveryExpenses">2,95&nbsp;€</p></option>
+                            <option value="0">Correos +<p id="deliveryExpenses">2,95&nbsp;€</p></option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="forma de pago">Forma de pago</label>
+                        <select id="PaymentList" class="combo" name="PaymentCode"><option selected="selected" value="T">Tarjeta +<span id="paymentExpenses">0,00&nbsp;€</span></option>
+                            <option value="Y">PayPal +<span id="paymentExpenses">0,00&nbsp;€</span></option>
+                            <option value="D">Domiciliación Bancaria +<span id="paymentExpenses">0,00&nbsp;€</span></option>
+                            <option value="R">Contra Reembolso +<span id="paymentExpenses">0,00&nbsp;€</span></option>
+                		</select>
+                    </fieldset>
+                    <div id="totalPrice">
+                        <p>TOTAL A PAGAR</p>
+                        <p id="totalAmmount">136,92&nbsp;€</p> 
+                    </div>
+                </div>
+                <div id="timeToExpire">
+                    <p>Su cesta caducará en 
+                        <span id="countdown" class="timeTo timeTo-black" style="font-family: Verdana, sans-serif; font-size: 20px;">
+                            <div class="first timeFormat">
+                                <ul>
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="timeFormat">
+                                <ul>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                            <span style="float:left; padding: 4px 0;">:</span>
+                            <div class="first timeFormat">
+                                <ul>
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                            <div class="timeFormat">
+                                <ul>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                        </span>
+                    </p>
+                </div>
+                <input id="PromotionAdvantageCode" name="PromotionAdvantageCode" type="hidden" value="">
+                <div class="content"><input class="buttonRosa" id="DoOrderBottom" name="DoOrderBottom" type="submit" value="Efectuar mi pedido"></div>
+            </form>
+        </div>
+	</div>
+</body>
+</html>
+

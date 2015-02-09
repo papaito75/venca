@@ -136,8 +136,16 @@
                 <p id="MobilePhoneError" class="red"></p>
             </fieldset>
             <fieldset>
-                <label for="FixedPhone">Tel&eacute;fono fijo (opcional)</label>
-                <input type="tel" class="textbox" id="FixedPhone" name="FixedPhone" maxlength="9" value="" />  
+            	<h1 class="headline">TELÉFONO FIJO</h1>
+            	<div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="FixedPhone" name="FixedPhone" value="" maxlength="9" placeholder="Fijo (opcional)"/>
+                </div>
+                <div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="FixedPhone" name="FixedPhone" value="" maxlength="9" />
+                </div> 
+                <div class="borderField tel">
+                	<input type="tel" class="fieldForm" id="FixedPhone" name="FixedPhone" value="" maxlength="9" />
+                </div> 
                 <p id="FixedPhoneError" class="red"></p>
             </fieldset>
             <fieldset id="authorizationField">
@@ -159,7 +167,7 @@
             <input class="buttonGris" style="float:left; width:47%" name="submit" type="submit" value="ATRÁS" />
     	</form>
         
-        <div id="tituloServicios">SERVICIOS</div>
+        <div id="tituloServicios" class="fondoGrisClaro">SERVICIOS</div>
         <div id="servicios">
             <ul id="serviciosContainer">
             	<li><a id="pedido"  class="itemServicio" href="/StaticPages/Services">Pedido</a></li>
